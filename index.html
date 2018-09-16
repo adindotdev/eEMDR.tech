@@ -37,11 +37,12 @@
 					<p>"an integrative psychotherapy approach that has been extensively researched and proven effective for the treatment of trauma and many other mental health problems."
 					</p><br />
 
-					<!--
-					<p>Tellus erat mauris ipsum fermentum<br />
-					etiam vivamus nunc nibh morbi.</p>
-					-->
 				</header>
+
+				<div class="box container">
+					<header>
+				 <iframe width=75% height=350px src="https://www.youtube.com/embed/uBulIeyuK3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="iFrame1"></iframe>
+			 </header></div>
 
 				<div class="box alt container">
 					<section class="feature left">
@@ -140,6 +141,24 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="application/javascript">
 
+			function resizeIFrameToFitContent( iFrame ) {
+			    iFrame.width  = 75%;
+			}
+
+			window.addEventListener('DOMContentLoaded', function(e) {
+
+			    var iFrame = document.getElementById( 'iFrame1' );
+			    resizeIFrameToFitContent( iFrame );
+
+			    // or, to resize all iframes:
+			    var iframes = document.querySelectorAll("iframe");
+			    for( var i = 0; i < iframes.length; i++) {
+			        resizeIFrameToFitContent( iframes[i] );
+			    }
+			} );
+
+			</script>
 	</body>
 </html>
